@@ -19,6 +19,7 @@ namespace CalculadoraAritmetica
             int OpcionSeleccionada;
             bool cerrarCalculadora = false;
             MenuInterfaz mi = new MenuImplementacion();
+            OperacionInterfaz op = new OperacionImplementacion();
 
 
 
@@ -36,22 +37,22 @@ namespace CalculadoraAritmetica
                     case 2:
                         Console.WriteLine("2");
                         Console.WriteLine("Ha seleccionado la operacion Suma");
-                        mi.suma();
+                        op.suma();
                         break;
                     case 3:
                         Console.WriteLine("3");
                         Console.WriteLine("Ha seleccionado la operacion Resta");
-                        mi.resta();
+                        op.resta();
                         break;
                     case 4:
                         Console.WriteLine("4");
                         Console.WriteLine("Ha seleccionado la operacion Multiplicacion");
-                        mi.multiplicacion();
+                        op.multiplicacion();
                         break;
                     case 5:
                         Console.WriteLine("5");
                         Console.WriteLine("Ha seleccionado la operacion Division");
-                        mi.division();
+                        op.division();
                         break;
                 }
 

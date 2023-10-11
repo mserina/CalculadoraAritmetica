@@ -34,18 +34,17 @@ namespace CalculadoraAritmetica.Servicios
         }
 
 
+        private int cogerNumero()
+        {
+            Console.WriteLine("Dame numero");
+            int numero= Int32.Parse(Console.ReadLine());
+            return numero;
+        }
 
         public int suma()
         {
-            int n1;
-            int n2;
-
-            Console.WriteLine("Numero1");
-            n1 = Int32.Parse(Console.ReadLine());
-
-            Console.WriteLine("Numero2");
-            n2 = Int32.Parse(Console.ReadLine());
-
+            int n1 = cogerNumero();
+            int n2 = cogerNumero();
             int suma = n1 + n2;
             Console.WriteLine("Resultado: " + suma);
 
